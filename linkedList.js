@@ -62,7 +62,7 @@ class LinkedList {
     }
 
     at(index) {
-        if (this.#head) {
+        if (this.#head && index >= 0 && (this.#head.size() >= index)) {
             let currentNode = this.#head
             for (let i = 0; i <= index; i++) {
                 if (i === index)
